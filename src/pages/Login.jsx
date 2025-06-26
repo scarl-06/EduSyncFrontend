@@ -38,7 +38,7 @@ const Login = () => {
           <h2 className="text-3xl font-bold text-emerald-800 dark:text-white">Welcome to EduSync</h2>
           <p className="mt-2 text-sm text-emerald-700 dark:text-emerald-200">Empowering Minds. Anywhere.</p>
           <img
-            src="/login-illustration.png"
+            src="/login-illustraction.png"
             alt="Login Illustration"
             className="mt-6 w-64 drop-shadow-xl"
           />
