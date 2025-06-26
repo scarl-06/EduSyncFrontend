@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Move Bootstrap import to JS instead — see below */
+
+/* Animations */
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out;
+}
+
+/* ✅ Explicit background for dark mode */
+html.dark body {
+  background-color: #0f172a; /* slate-900 */
+  color: #f1f5f9; /* slate-100 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌿 Soft Mint Theme Base */
+body {
+  background-color: #e6fdf5; /* light mint background */
+  color: #0f766e; /* deep teal text */
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🟢 Button Accent (if not using Tailwind classes directly) */
+button {
+  background-color: #34d399; /* mint green */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #10b981; /* darker mint */
+}
