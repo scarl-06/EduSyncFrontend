@@ -13,7 +13,7 @@ const ResultsPage = () => {
   useEffect(() => {
     fetchAssessments();
     fetchStudents();
-  }, []);
+  }, [fetchAssessments]);
 
   const fetchAssessments = async () => {
     try {
